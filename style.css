@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('img/doctor.jpg');
+    background-size: cover;
+    font-family: 'Mulish', sans-serif;
+}
+
+.greeting {
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    max-width: 1300px;
+    margin-inline: auto;
+}
+
+.greeting__title {
+    font-size: 70px;
+    margin-top: 90px;
+    margin-inline: auto;
+    color: #fff;
+}
+
+.greeting__text {
+    color: #fff;
+    font-size: 50px;
+    margin-top: 30px;
+    margin-inline: auto;
+}
+
+.greeting__right {
+    margin-right: 70px;
+}
+
+.footer__data {
+    color: rgba(255, 255, 255, 0.80);
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.footer {
+    margin-top: 150px;
+    padding-top: 42px;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+html,
+body,
+.myWrapper {
+	width: 100%;
+	height: 400px;
+}
+.myWrapper {
+	position: relative;
+}
+#videoHolder {
+	position: relative;
+	padding-top: 55px;
+	height: 0;
+	text-align: center;
+	margin: 0 auto;
+	width: 566px;
+}
+h3 {
+	margin: 0;
+}
+#myVideo {
+	width: 566px;
+	height: 354px;
+	outline: none;
+}
+.thumb {
+	width: 23%;
+	display: inline-block;
+	border: 1px solid #919191;
+	text-transform: uppercase;
+	line-height: 50px;
+	background-size: 100% auto;
+	cursor: pointer;
+	font-size: 80%;
+    display: none;
+}
+
+@media only screen and (max-width: 1243px) {
+    .greeting {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 618px) {
+    
+    .greeting__title {
+        font-size: 50px;
+        margin-left: 40px;
+    }
+    
+    .greeting__text {
+        font-size: 30px;
+        margin-left: 40px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+	#videoHolder {
+		width: calc(100% - 20px);
+		margin: 0 10px;
+	}
+	#myVideo,
+	.thumbs {
+		width: 100%;
+		height: auto;
+	}
+}
+
+@media only screen and (max-width: 490px) {
+    .footer {
+        margin-top: 30px;
+    }
+}
